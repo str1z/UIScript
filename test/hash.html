@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/uiscript.css" />
+    <script src="../lib/uiscript.js"></script>
+  </head>
+  <body>
+    <script>
+      UIScript.useHashRoute("a", "b", "c");
+    </script>
+    <div class="container">
+      <h4>UIScript</h4>
+      <h2>Hash routing</h2>
+      <div class="group">
+        <a href="#a" class="btn primary">Goto #a</a>
+        <a href="#b" class="btn success">Goto #b</a>
+        <a href="#c" class="btn danger">Goto #c</a>
+      </div>
+
+      <div class="hash-route-a space">Nice to meet you, I am A and you can only see me at #a.</div>
+      <div class="hash-route-b space">Greetings, I am B and we are are not changing in terms of DOM elements...</div>
+      <div class="hash-route-c space">Hello, I am C. However are styles are!</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/uiscript.css" />
+    <script src="../lib/uiscript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="data">
+        <h1 style="color: __color__">__title__</h1>
+        <p>__content__</p>
+      </div>
+    </div>
+    <script>
+      new UIScript.Unit(document.getElementById("data")).mapArray([
+        { title: "hello", content: "This is some text", color: "red" },
+        { title: "hello", content: "This is some text", color: "blue" },
+        { title: "hello", content: "This is some text", color: "green" },
+      ]);
+    </script>
+  </body>
+</html>

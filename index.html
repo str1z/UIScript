@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/lib/uiscript.css" />
+    <script src="lib/uiscript.js"></script>
+    <script>
+      UIScript.setProperties({
+        layoutLeftWidth: "150px",
+        layoutRightWidth: "50px",
+      });
+      UIScript.useHashRoute("overview", "typography", "buttons", "fields", "groups", "drops", "tables", "cards");
+    </script>
+  </head>
+  <body>
+    <div class="navbar top pad-2 content-text-primary">
+      <div class="brand">
+        UIScript
+      </div>
+      <a class="link" href="/components">Documentation</a>
+      <a class="link" href="/about">About</a>
+    </div>
+    <div class="layout expand-left expand-right">
+      <div class="left">
+        <div class="group vertical content-rect printed content-hover-lift" style="width: 100%; border-radius: 0;">
+          <a href="#overview" class="btn">Overview</a>
+          <a href="#typography" class="btn">Typography</a>
+          <a href="#buttons" class="btn">Buttons</a>
+          <a href="#fields" class="btn">Fields</a>
+          <a href="#groups" class="btn">Groups</a>
+          <a href="#drops" class="btn">Drops</a>
+          <a href="#tables" class="btn">Tables</a>
+          <a href="#cards" class="btn">Cards</a>
+        </div>
+      </div>
+      <div class="center pad-2">
+        <div class="hash-route-overview content-y">
+          <h2>Overview</h2>
+          <h4 class="text-info">What is UIScript?</h4>
+          <p>
+            UIScript is a lightweight frontend UI framework.
+          </p>
+          <h4 class="text-info">Why choose UIScript?</h4>
+          <p>
+            UIScript is highly customizable with cool simple javascript features. It has a few selection of great looking components and has the basics utilities for styling.
+          </p>
+          <h4 class="text-info">All the components...</h4>
+          <div class="content-block content-y">
+            <button class="btn primary">Button</button>
+            <input class="field" placeholder="Field" />
+            <div class="group">
+              <button class="btn primary">Button</button>
+              <button class="btn success">Button</button>
+              <button class="btn danger">Button</button>
+              <input class="field" placeholder="Field" />
+            </div>
+            <div class="group vertical">
+              <button class="btn primary">Button</button>
+              <button class="btn success">Button</button>
+              <button class="btn danger">Button</button>
+              <input class="field" placeholder="Field" />
+            </div>
+            <div class="drop">
+              <button class="btn primary">Drop</button>
+              <div class="group">
+                <button class="btn primary">Button</button>
+                <button class="btn success">Button</button>
+                <button class="btn danger">Button</button>
+                <input class="field" placeholder="Field" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

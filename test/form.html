@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/uiscript.css" />
+    <script src="../lib/uiscript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="content-block content-y">
+        <input type="text" class="field block" placeholder="Name" name="name" />
+        <input type="email" class="field block" placeholder="Email" name="email" />
+        <input type="password" class="field block" placeholder="Password" name="password" />
+        <label class="block space">
+          <input type="checkbox" name="agreement" />
+          I agree to the terms and conditions
+        </label>
+        <input type="submit" class="btn" />
+      </form>
+    </div>
+    <script>
+      let form = new UIScript.Unit(document.getElementById("form"));
+      form.on("submit", (e) => {
+        e.preventDefault();
+        console.log(form.formData());
+      });
+    </script>
+  </body>
+</html>
